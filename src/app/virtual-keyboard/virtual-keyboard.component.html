@@ -1,0 +1,26 @@
+<div class="row row1">
+    <div role="button" (click)="onKeyPressed(letter.letter)" [attr.cy-letter]="letter.letter" class="key" [class.used]="letter.match" class="{{ letter.match }}" *ngFor="let letter of row1">
+        {{ letter.letter }}
+    </div>
+</div>
+
+<div class="row row2">
+    <div role="button" (click)="onKeyPressed(letter.letter)" [attr.cy-letter]="letter.letter" class="key" [class.used]="letter.match" class="{{ letter.match }}" *ngFor="let letter of row2">
+        {{ letter.letter }}
+    </div>
+</div>
+
+<div class="row row3">
+
+    <div role="button" cy-letter="ENTER" (click)="onKeyPressed('ENTER')" class="key special">
+        ENTER
+    </div>
+
+    <div role="button" (click)="onKeyPressed(letter.letter)" [attr.cy-letter]="letter.letter" class="key" [class.used]="letter.match" class="{{ letter.match }}" *ngFor="let letter of row3">
+        {{ letter.letter }}
+    </div>
+
+    <div role="button" cy-letter="DELETE" (click)="onKeyPressed('DELETE')" class="key special">
+        DELETE
+    </div>
+</div>

@@ -1,0 +1,36 @@
+:host {
+    display: grid;
+}
+
+.row {
+    display: flex;
+    margin: auto;
+
+    user-select: none;
+
+    .key {
+        margin: .2em;
+        padding: .2em;
+        border: 1px solid gray;
+        text-transform: uppercase;
+        font-size: 0.9em;
+
+        text-align: center;
+
+        &:not(.special) {
+            width: 1.3em;
+        }
+
+        &.exact {
+            background: lightgreen;
+        }
+
+        &.partial {
+            background-color: yellow;
+        }
+
+        &.miss {
+            background-color: lightgray;
+        }
+    }
+}
