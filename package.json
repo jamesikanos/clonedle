@@ -45,13 +45,15 @@
     "@storybook/testing-library": "^0.0.13",
     "@types/jasmine": "~4.3.0",
     "babel-loader": "^8.3.0",
+    "cypress": "latest",
+    "cypress-hmr-restarter": "^2.1.0",
+    "cypress-storybook": "^0.5.1",
     "jasmine-core": "~4.5.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.1.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
-    "typescript": "~4.8.2",
-    "cypress": "latest"
+    "typescript": "~4.8.2"
   }
 }

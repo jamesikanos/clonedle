@@ -1,5 +1,6 @@
 import { setCompodocJson } from "@storybook/addon-docs/angular";
 import docJson from "../documentation.json";
+import 'cypress-storybook/angular';
 setCompodocJson(docJson);
 
 export const parameters = {

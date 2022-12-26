@@ -5649,6 +5649,16 @@ cyclist@^1.0.1:
   resolved "https://registry.yarnpkg.com/cyclist/-/cyclist-1.0.1.tgz#596e9698fd0c80e12038c2b82d6eb1b35b6224d9"
   integrity sha512-NJGVKPS81XejHcLhaLJS7plab0fK3slPh11mESeeDq2W4ZI5kUKK/LRRdVDvjJseojbPB7ZwjnyOybg3Igea/A==
 
+cypress-hmr-restarter@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/cypress-hmr-restarter/-/cypress-hmr-restarter-2.1.0.tgz#07fccfd9ec869dc8340d0b6614dcb4d5e48908a6"
+  integrity sha512-WRfOQ9h5KQzGJvMNitTTKUm2LPPEsBVmQ7RvovkoOyOi9pH8bOWS6EIlrJUSgpucHeQldIWyZrDD2uqTOR5tnQ==
+
+cypress-storybook@^0.5.1:
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/cypress-storybook/-/cypress-storybook-0.5.1.tgz#e71b14ecfbe16a70b9f003c8294143ef466db78f"
+  integrity sha512-+CNDdcrFD3QRvHrjwpVclFpLtseyXA0NxeB3PDTheisvg/OJjLkP96t0I9R66IkZRYUUE3mLhqZpmpsv59FIIw==
+
 cypress@latest:
   version "12.2.0"
   resolved "https://registry.yarnpkg.com/cypress/-/cypress-12.2.0.tgz#86ddc1ecfffadf57a8689e211cfb4437735f4e92"
