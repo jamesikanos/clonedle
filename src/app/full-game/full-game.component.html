@@ -1,0 +1,5 @@
+<h2>Clonedle</h2>
+
+<app-game-grid [answer]="answer" [guesses]="guesses" [currentGuess]="currentGuess"></app-game-grid>
+
+<app-virtual-keyboard [answer]="answer" [guesses]="guesses" (keyPressed)="onVirtualKeyPress($event)"></app-virtual-keyboard>
