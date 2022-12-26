@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { OutletContext } from '@angular/router';
+import { LetterMatch } from '../letter-match';
 
 const row1Letters: string[] = [ 'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P' ];
 const row2Letters: string[] = [ 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L' ];
@@ -85,5 +86,5 @@ export class VirtualKeyboardComponent {
 interface VirtualKey {
   letter: string;
 
-  match?: 'exact' | 'partial' | 'miss' | null;
+  match?: LetterMatch;
 }

@@ -1,0 +1,21 @@
+:host {
+    display: grid;
+    width: 2em;
+    height: 2em;
+    font-size: 1.3em;
+    border: 1px solid gray;
+    justify-content: center;
+    align-items: center;
+}
+
+:host(.used) {
+    background-color: gainsboro;
+
+    &.exact {
+        background-color: lightgreen;
+    }
+
+    &.partial {
+        background-color: yellow;
+    }
+}
