@@ -1,0 +1,26 @@
+<!-- Guesses -->
+<div class="row guess" *ngFor="let guess of guesses">
+    <app-grid-cell [match]="matchForLetter(guess, 0)" [letter]="letterOfGuess(guess, 0)"></app-grid-cell>
+    <app-grid-cell [match]="matchForLetter(guess, 1)" [letter]="letterOfGuess(guess, 1)"></app-grid-cell>
+    <app-grid-cell [match]="matchForLetter(guess, 2)" [letter]="letterOfGuess(guess, 2)"></app-grid-cell>
+    <app-grid-cell [match]="matchForLetter(guess, 3)" [letter]="letterOfGuess(guess, 3)"></app-grid-cell>
+    <app-grid-cell [match]="matchForLetter(guess, 4)" [letter]="letterOfGuess(guess, 4)"></app-grid-cell>
+</div>
+
+<!-- Current Guess -->
+<div class="row current" *ngIf="canShowCurrentGuess">
+    <app-grid-cell [letter]="letterOfCurrentGuess(0)"></app-grid-cell>
+    <app-grid-cell [letter]="letterOfCurrentGuess(1)"></app-grid-cell>
+    <app-grid-cell [letter]="letterOfCurrentGuess(2)"></app-grid-cell>
+    <app-grid-cell [letter]="letterOfCurrentGuess(3)"></app-grid-cell>
+    <app-grid-cell [letter]="letterOfCurrentGuess(4)"></app-grid-cell>
+</div>
+
+<!-- Empty Rows -->
+<div class="row empty" *ngFor="let row of [].constructor(numberOfEmptyRows)">
+    <app-grid-cell></app-grid-cell>
+    <app-grid-cell></app-grid-cell>
+    <app-grid-cell></app-grid-cell>
+    <app-grid-cell></app-grid-cell>
+    <app-grid-cell></app-grid-cell>
+</div>
