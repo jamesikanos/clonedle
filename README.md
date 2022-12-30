@@ -1,27 +1,32 @@
-# Clonedle
+# Clonedle - The Component/Testing Driven Programming Tutorial
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
+This code accompanies the YouTube tutorial at: https://youtu.be/Lefm11h3NUk
 
-## Development server
+## Dependencies
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+You'll need 2 global dependencies:
 
-## Code scaffolding
+- npm install -g @angular/cli
+- npm install -g @storybook/cli
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Running The Code
 
-## Build
+To run the code:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- `yarn` (to update your dependencies)
+- `ng serve`
+- Navigate to http://localhost:4200
 
-## Running unit tests
+## Testing the Code
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+You can either run Cypress in Foreground or Background mode.
 
-## Running end-to-end tests
+For foreground mode to develop the tests: `yarn cypress open`.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+For background mode to run the tests quickly: `yarn cypress run`.
 
-## Further help
+## Component Development
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+To open Storybook to play around with the components: `yarn storybook`.
+
+Then, navigate to http://localhost:6006
